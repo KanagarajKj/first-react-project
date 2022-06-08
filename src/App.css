@@ -29,7 +29,6 @@ body {
     margin: 3rem 1rem;
     width: 100%;
     transition: 0.2s ease-in-out;
-    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -45,13 +44,9 @@ body {
     margin: 1.5rem 0;
 }
 
-.books {
-    display: grid;
-    place-items: center;
-}
 
 .book_title{
-    margin: 0.3rem;
+    margin-bottom: 0.25rem;
     color: blue;
     font-size: 1.2rem;
 }
@@ -66,8 +61,6 @@ body {
 }
 
 .cart_btn{
-    display: flex;
-    justify-content: center;
     padding: 0.8rem;
     background-color:cornflowerblue;
     color: white;
@@ -76,8 +69,13 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 2rem;
 }
+
+.books {
+    display: grid;
+    place-items: center;
+}
+
 
 @media screen and (min-width:768px){
     .books {

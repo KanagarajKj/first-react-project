@@ -7,16 +7,20 @@ const Book = (props) => {
     alert(`${title} has been added to cart`);
   }
   return (
-    <div className='book_store_container'>
+    <div className="book_store_container">
       <div className="book_img_container">
-        <img src={image} alt={title} className='book_img' />
+        <img src={image} alt={title} className="book_img" />
       </div>
-      <h2 className='book_title'>{title}</h2>
-      <p className='book_author'>{author}</p>
-      <button className="cart_btn" onClick={() => addCart(title)}>Add to Cart</button>
+      <div>
+        <h2 className="book_title">{title}</h2>
+        <p className="book_author">{author}</p>
+      </div>
+      <button className="cart_btn" onClick={() => addCart(title)}>
+        Add to Cart
+      </button>
       {props.children}
     </div>
-  )
+  );
 }
 
 export default Book
